@@ -1,8 +1,5 @@
 # cifs-head-start-sem-reproducibility
 Reproducible analytic materials for a published study: matched observational data, SEM, and measurement invariance testing to examine preschool academic and social outcomes; data auditing and cleaning in R, latent-variable model specification in Mplus, and supplemental robustness work (propensity score matching, clustered models, and Bayesian SEM).
-# cifs-head-start-sem-reproducibility
-
-Reproducible analytic materials for the study:
 
 **Huang, R., Rosca, O., Liu, Q., Battista, C., & Baker, E. R. (2025). _Associations between father incarceration and Head Start children's academic and social competence: A case–control matching analysis_. Early Child Development and Care.**  
 DOI: https://doi.org/10.1080/03004430.2025.2587743
