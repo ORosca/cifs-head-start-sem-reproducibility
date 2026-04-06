@@ -1,0 +1,43 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary / backup files
+*.tmp
+*.bak
+*.swp
+*~
+
+# R / RStudio
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Office temp files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# Mplus auxiliary files
+*.gh5
+*.gph
+*.chk
+*.log
+
+# Local restricted data folders
+data/
+raw_data/
+restricted_data/
+identifiable_data/
+
+# Caches
+_cache/
+cache/
+*_cache/
