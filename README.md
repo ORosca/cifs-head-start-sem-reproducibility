@@ -75,6 +75,13 @@ This repository covers the following stages of the study:
 - clustered outcome re-estimation
 - Bayesian latent-variable sensitivity analysis with BFIML
 
+### The supplement/ folder contains PDF supplements documenting the robustness analyses and supporting diagnostics
+The supplement/ folder includes both editable .docx files and rendered .pdf versions for easy viewing:
+CIF_Robustness_Supplement_MASTER.docx / CIF_Robustness_Supplement_MASTER.pdf — narrative supplement describing the robustness checks.
+CIF_Robustness_Technical_Appendix.docx / CIF_Robustness_Technical_Appendix.pdf — technical details (MI, PSM, diagnostics, outputs).
+CIF_PSM_Balance_Tables.docx / CIF_PSM_Balance_Tables.pdf — balance diagnostics tables for the alternative 1:1 PSM sample.
+CIF_Executive_Summary_1page.docx / CIF_Executive_Summary_1page.pdf — one-page study + robustness summary.
+
 ## Why output files are not included
 
 This repository does **not** include Mplus output files or diagram files. The original output files used during manuscript development were not retained in a complete recoverable form, and the final numerical results are already fully presented in the published paper and supplementary materials.
