@@ -1,5 +1,5 @@
 # cifs-head-start-sem-reproducibility
-Reproducible analytic materials for a published study: matched observational data, SEM, and measurement invariance testing to examine preschool academic and social outcomes; data auditing and cleaning in R, latent-variable model specification in Mplus, and supplemental robustness work (propensity score matching, clustered models, and Bayesian SEM).
+Reproducible analytic materials for a published study: matched observational data, SEM, and measurement invariance testing to examine preschool academic and social outcomes; data auditing and cleaning in R, latent-variable model specification in Mplus using robust maximum likelihood (MLR) with full information maximum likelihood (FIML) for missing data, and supplemental robustness work (propensity score matching, clustered models, and Bayesian SEM with BFIML).
 
 **Huang, R., Rosca, O., Liu, Q., Battista, C., & Baker, E. R. (2025). _Associations between father incarceration and Head Start children's academic and social competence: A case–control matching analysis_. Early Child Development and Care.**  
 DOI: https://doi.org/10.1080/03004430.2025.2587743
@@ -20,6 +20,8 @@ After matching, the main analysis used **structural equation modeling (SEM)** to
 - **Literacy**
 - **Mathematics**
 - **Social Competence**
+
+SEM models were estimated in Mplus (v8.7) using robust maximum likelihood (MLR); missing data were handled via full information maximum likelihood (FIML).
 
 The final reported findings indicated that, after matching and covariate adjustment, father incarceration did **not** show a detectable independent association with these latent outcomes in this sample. The paper also reports later robustness checks using clustered methods and Bayesian SEM on an alternative propensity-score-matched sample.
 
@@ -42,7 +44,7 @@ This folder contains the **final public Mplus input files** for the main SEM wor
 - saturated/null comparison model
 - measurement invariance models 1–3
 
-These files document the latent-variable structure used in the study and show how the reported SEM analyses were specified in Mplus.
+These files document the latent-variable structure used in the study and show how the reported SEM analyses were specified in Mplus. All Mplus models use MLR estimation; missing data are handled with FIML (implemented automatically in Mplus under MLR).
 
 ### 3. Robustness and supplemental materials (`supplement/`)
 This folder contains materials related to the later robustness analyses conducted after peer review. These include:
@@ -71,7 +73,7 @@ This repository covers the following stages of the study:
 ### C. Supplemental robustness analyses
 - alternative 1:1 propensity score matching
 - clustered outcome re-estimation
-- Bayesian latent-variable sensitivity analysis
+- Bayesian latent-variable sensitivity analysis with BFIML
 
 ## Why output files are not included
 
