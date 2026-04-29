@@ -1,0 +1,31 @@
+Title:
+CIPS CFA to specify the structural relationship among three latent variables and
+their indicators; Wald Test of Parameter Constraints to test the significance of
+a regression estimate for two groups of Imprisoned Parents;
+DATA:
+FILE IS C:\Users\Oxana\Documents\CIPS2.csv;
+VARIABLE:
+NAMES ARE idorig CombSiSp YearProg ParentIn PALS alphknow sightwrd spell
+numbers geometry measures selfcont cooperat social initiat persist probsolv
+PIcat InToNeed gender AdultFam FamSize ethnicit caregiv educatPC ChildFam;
+USEVARIABLES ARE YearProg ParentIn CombSiSp PALS alphknow numbers geometry measures
+selfcont cooperat social initiat;
+MISSING ARE ALL (-99);
+GROUPING IS ParentIn (0=NonImprF 1=ImprFath);
+MODEL:
+! Measurement model (CFAs)
+Math by numbers geometry measures;
+Literacy by PALS alphknow CombSiSp;
+SocSkill by selfcont cooperat social initiat;
+Math on YearProg; 
+Literacy on YearProg;
+SocSkill on YearProg;
+Math with Literacy SocSkill;
+Literacy with SocSkill;
+MODEL NonImprF :
+SocSkill on YearProg (p1);
+MODEL ImprFath :
+SocSkill on YearProg (p2);
+OUTPUT: STANDARDIZED;
+MODEL TEST:
+p1=p2;
