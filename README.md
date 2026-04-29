@@ -46,7 +46,7 @@ This folder contains the **final public Mplus input files** for the main SEM wor
 
 These files document the latent-variable structure used in the study and show how the reported SEM analyses were specified in Mplus. All Mplus models use MLR estimation; missing data are handled with FIML (implemented automatically in Mplus under MLR).
 
-### 3. Robustness and supplemental materials (`supplement/`)
+### 3. Robustness and sensitivity analysis materials (`bayes_sensitivity/`)
 This folder contains materials related to the later robustness analyses conducted after peer review. These include:
 - an alternative **1:1 propensity score matching (PSM)** approach
 - **clustered GEE / mixed-model re-estimation** of observed outcomes
@@ -75,8 +75,8 @@ This repository covers the following stages of the study:
 - clustered outcome re-estimation
 - Bayesian latent-variable sensitivity analysis with BFIML
 
-### The supplement/ folder contains PDF supplements documenting the robustness analyses and supporting diagnostics
-The supplement/ folder includes both editable .docx files and rendered .pdf versions for easy viewing:
+### The bayes_sensitivity/ folder contains PDF supplements documenting the robustness analyses and supporting diagnostics
+The bayes_sensitivity/ folder includes rendered .pdf versions for easy viewing:
 CIF_Robustness_Supplement_MASTER.docx / CIF_Robustness_Supplement_MASTER.pdf — narrative supplement describing the robustness checks.
 CIF_Robustness_Technical_Appendix.docx / CIF_Robustness_Technical_Appendix.pdf — technical details (MI, PSM, diagnostics, outputs).
 CIF_PSM_Balance_Tables.docx / CIF_PSM_Balance_Tables.pdf — balance diagnostics tables for the alternative 1:1 PSM sample.
@@ -89,7 +89,7 @@ This repository does **not** include Mplus output files or diagram files. The or
 For this reason, the repository is organized around the most useful reproducible artifacts that remain:
 - preprocessing code
 - final Mplus input specifications
-- supplemental methods materials
+- supplemental sensitivity analyses materials
 
 ## Data availability
 
