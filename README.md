@@ -75,12 +75,14 @@ This repository covers the following stages of the study:
 - clustered outcome re-estimation
 - Bayesian latent-variable sensitivity analysis with BFIML
 
-### The bayes_sensitivity/ folder contains PDF supplements documenting the robustness analyses and supporting diagnostics
-The bayes_sensitivity/ folder includes rendered .pdf versions for easy viewing:
-CIF_Robustness_Supplement_MASTER.docx / CIF_Robustness_Supplement_MASTER.pdf — narrative supplement describing the robustness checks.
-CIF_Robustness_Technical_Appendix.docx / CIF_Robustness_Technical_Appendix.pdf — technical details (MI, PSM, diagnostics, outputs).
-CIF_PSM_Balance_Tables.docx / CIF_PSM_Balance_Tables.pdf — balance diagnostics tables for the alternative 1:1 PSM sample.
-CIF_Executive_Summary_1page.docx / CIF_Executive_Summary_1page.pdf — one-page study + robustness summary.
+### Contents of the `bayes_sensitivity/` folder
+
+- **`CIF_Propensity_Score_Matching_Bayesian_SEM.ipynb`**: Google Colab (Python / PyMC) notebook implementing the 1:1 propensity score matching and the Bayesian SEM sensitivity analysis (matched-pair random intercepts; posterior effects pooled across the five imputed matched datasets). Primary code artifact.
+- **`Colab Notebook CIF_Propensity_Score_Matching_Bayesian_SEM.pdf`**: rendered PDF of the notebook, for quick viewing without running it.
+- **`CIF_Robustness_Supplement_MASTER`** (`.docx` / `.pdf`): narrative supplement describing the robustness checks.
+- **`CIF_Robustness_Technical_Appendix`** (`.docx` / `.pdf`): technical details (measurement invariance, PSM, diagnostics, outputs).
+- **`CIF_PSM_Balance_Tables`** (`.docx` / `.pdf`): balance diagnostics tables for the alternative 1:1 PSM sample.
+- **`CIF_Executive_Summary_1page`** (`.docx` / `.pdf`): one-page study and robustness summary.
 
 ## Why output files are not included
 
